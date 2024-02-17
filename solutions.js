@@ -35,7 +35,7 @@ function factorial(n) {
 
 // Find the Largest Number
 function findLargest(arr) {
-  if (typeof arr !== 'number' ) {
+  if (!arr.every(item => typeof item === 'number')) {
     console.log("Los datos de entrada no son adecuados");
   }
   else{
