@@ -73,12 +73,12 @@ function isPrime(n) {
   if (typeof n !== 'number') {
     console.log("Los datos de entrada no son adecuados");
   }
-  else if (numero < 2) {
+  else if (n < 2) {
     return false;
   }
   
-  for (let i = 2; i <= Math.sqrt(numero); i++) {
-    if (numero % i === 0) {
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
       return false;
     }
     return true;
