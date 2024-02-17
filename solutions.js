@@ -51,9 +51,10 @@ function findLargest(arr) {
 
 // Count Vowels in a String
 function countVowels(str) {
-  if (typeof str == 'number' ) {
+  if (typeof str !== 'string' ) {
     console.log("Los datos de entrada no son adecuados");
   }
+  else{
   let count = 0;
   str = str.toLowerCase();
   
@@ -65,14 +66,26 @@ function countVowels(str) {
   
   return count;
 }
+}
 
 // Check if a Number is Prime
 function isPrime(n) {
-  if (typeof a !== 'number' || typeof b !== 'number') {
+  if (typeof n !== 'number') {
     console.log("Los datos de entrada no son adecuados");
   }
-  // Add your code here
+  else if (numero < 2) {
+    return false;
+  }
+  
+  for (let i = 2; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+    return true;
+  }
+  
 }
+
 
 module.exports = {
   sum,
