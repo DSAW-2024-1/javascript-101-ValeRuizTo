@@ -38,7 +38,14 @@ function findLargest(arr) {
   if (typeof arr !== 'number' ) {
     console.log("Los datos de entrada no son adecuados");
   }
-  // Add your code here
+  else{
+    let numeroMayor=arr[0]
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > numeroMayor) {
+          numeroMayor = arr[i]; 
+  }
+}
+}
 }
 
 // Count Vowels in a String
