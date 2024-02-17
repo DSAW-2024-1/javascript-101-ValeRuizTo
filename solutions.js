@@ -40,7 +40,7 @@ function findLargest(arr) {
   }
   else{
     let numeroMayor=arr[0]
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 1; i < arr.length; i++) {
       if (arr[i] > numeroMayor) {
           numeroMayor = arr[i]; 
   }
