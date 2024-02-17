@@ -24,8 +24,8 @@ function factorial(n) {
 
   }
   else{
-    let resultado=2;
-    for(let i=1;i<=n;i++){
+    let resultado=1;
+    for(let i=2;i<=n;i++){
       resultado*=i;
     }
   return resultado 
