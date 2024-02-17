@@ -3,19 +3,41 @@
 function sum(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     console.log("Los datos de entrada no son adecuados");
-    return NaN;
   }
+  else{
   return a + b;
+  }
 }
 
 
 // Factorial of a Number
 function factorial(n) {
-  // Add your code here
-}
+  if (typeof n !== 'number' ) {
+    console.log("Los datos de entrada no son adecuados");
+  }
+  else if (n == 0 ||n == 1){
+      return 1;
+    }
+  else if(n<0)
+  {
+    console.log("No se puede calcular el factorial de un numero negativo");
+
+  }
+  else{
+    let resultado=2;
+    for(let i=1;i<=n;i++){
+      resultado*=i;
+    }
+  return resultado 
+  }
+  }
+
 
 // Find the Largest Number
 function findLargest(arr) {
+  if (typeof arr !== 'number' ) {
+    console.log("Los datos de entrada no son adecuados");
+  }
   // Add your code here
 }
 
@@ -26,6 +48,9 @@ function countVowels(str) {
 
 // Check if a Number is Prime
 function isPrime(n) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    console.log("Los datos de entrada no son adecuados");
+  }
   // Add your code here
 }
 
