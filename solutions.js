@@ -45,8 +45,8 @@ function findLargest(arr) {
           numeroMayor = arr[i]; 
   }
   }
-  }
   return numeroMayor;
+  }
   }
 
 // Count Vowels in a String
