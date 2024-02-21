@@ -1,27 +1,91 @@
 // Sum of Two Numbers
+
 function sum(a, b) {
-  // Add your code here
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    console.log("Los datos de entrada no son adecuados");
+  }
+  else{
+  return a + b;
+  }
 }
+
 
 // Factorial of a Number
 function factorial(n) {
-  // Add your code here
-}
+  if (typeof n !== 'number' ) {
+    console.log("Los datos de entrada no son adecuados");
+  }
+  else if (n == 0 ||n == 1){
+      return 1;
+    }
+  else if(n<0)
+  {
+    console.log("No se puede calcular el factorial de un numero negativo");
+
+  }
+  else{
+    let resultado=1;
+    for(let i=2;i<=n;i++){
+      resultado*=i;
+    }
+  return resultado 
+  }
+  }
+
 
 // Find the Largest Number
 function findLargest(arr) {
-  // Add your code here
-}
+  if (!arr.every(item => typeof item === 'number')) {
+    console.log("Los datos de entrada no son adecuados");
+  }
+  else{
+    let numeroMayor=arr[0]
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > numeroMayor) {
+          numeroMayor = arr[i]; 
+  }
+  }
+  return numeroMayor;
+  }
+  }
 
 // Count Vowels in a String
 function countVowels(str) {
-  // Add your code here
+  if (typeof str !== 'string' ) {
+    console.log("Los datos de entrada no son adecuados");
+  }
+  else{
+  let count = 0;
+  str = str.toLowerCase();
+  
+    for (let i = 0; i < str.length; i++) {
+    if (str[i]=="a"||str[i]=="e"||str[i]=="i"||str[i]=="o"||str[i]=="u") {
+      count++;
+    }
+  }
+  
+  return count;
+}
 }
 
 // Check if a Number is Prime
 function isPrime(n) {
-  // Add your code here
+  if (typeof n !== 'number') {
+    console.log("Los datos de entrada no son adecuados");
+  }
+  else if (n < 2) {
+    return false;
+  }
+  
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      return false;
+    }
+    return true;
+  }
+  
 }
+
 
 module.exports = {
   sum,

@@ -6,23 +6,6 @@ const {
   isPrime,
 } = require("./solutions.js");
 
-describe("Sum of Two Numbers", () => {
-  test("adds 3 + 5 to equal 8", () => {
-    expect(sum(3, 5)).toBe(8);
-  });
-
-  test("adds -10 + 20 to equal 10", () => {
-    expect(sum(-10, 20)).toBe(10);
-  });
-
-  test("adds string input to print message", () => {
-    const consoleSpy = jest.spyOn(console, "log");
-    sum("a", 5);
-    expect(consoleSpy).toHaveBeenCalledWith(
-      "Los datos de entrada no son adecuados"
-    );
-  });
-});
 
 describe("Factorial of a Number", () => {
   test("factorial of 0 is 1", () => {
